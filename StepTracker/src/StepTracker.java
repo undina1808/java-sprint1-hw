@@ -16,12 +16,12 @@ public class StepTracker {
     }
 
     public void addSteps(int month, int day, int steps) {
-        int currentSteps = monthArray[month - 1].dailySteps[day - 1];
-        monthArray[month - 1].dailySteps[day - 1] = currentSteps + steps;
+        int currentSteps = monthArray[month].dailySteps[day - 1];
+        monthArray[month].dailySteps[day - 1] = currentSteps + steps;
     }
 
     public void printStatistics(int month) {
-        int[] dailySteps = monthArray[month - 1].dailySteps;
+        int[] dailySteps = monthArray[month].dailySteps;
 
         System.out.println("Статистика за " + month + " месяц");
         System.out.println("Количество пройденных шагов по дням:");

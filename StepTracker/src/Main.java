@@ -14,15 +14,15 @@ public class Main {
             if (userInput == 1) {
                 System.out.println("Укажите месяц");
                 int month = scanner.nextInt();
-                while (month < 0 || month > 12) {
-                    System.out.println("Значение месяца должно быть неотрицательным и не превышать 12");
+                while (month < 0 || month > 11) {
+                    System.out.println("Значение месяца должно быть неотрицательным и не превышать 11");
                     System.out.println("Укажите месяц");
                     month = scanner.nextInt();
                 }
 
                 System.out.println("Укажите день");
                 int day = scanner.nextInt();
-                while (day < 0 || day > 30) {
+                while (day < 1 || day > 30) {
                     System.out.println("Значение дня должно быть неотрицательным и не превышать 30");
                     System.out.println("Укажите день");
                     day = scanner.nextInt();
@@ -30,8 +30,8 @@ public class Main {
 
                 System.out.println("Укажите количество шагов");
                 int steps = scanner.nextInt();
-                while (steps <= 0) {
-                    System.out.println("Количество шагов должно быть больше 0");
+                while (steps < 0) {
+                    System.out.println("Количество шагов должно быть неотрицательным");
                     System.out.println("Укажите количество шагов");
                     steps = scanner.nextInt();
                 }
