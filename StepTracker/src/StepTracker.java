@@ -1,6 +1,6 @@
 public class StepTracker {
 
-    int stepsGoal = 6; //заменить на 10000!!
+    int stepsGoal = 10000;
 
     MonthData[] monthArray;
 
@@ -62,7 +62,7 @@ public class StepTracker {
                 daysInARow = 0;
             }
         }
-        System.out.println("Лучшая серия из подряд идущих дней с превышением цели по шагам - " + maxDaysInARow);
+        System.out.println("Лучшая серия из подряд идущих дней с превышением цели по шагам: " + maxDaysInARow);
     }
 
     public void modifyGoal(int goal) {
