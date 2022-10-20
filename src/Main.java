@@ -61,11 +61,11 @@ public class Main {
     }
 
     private static void outputStatistics(Scanner scanner, StepTracker steptracker) {
-        System.out.println("Укажите месяц, за который вывести статистику");
+        System.out.println("Укажите месяц, за который вывести статистику (считаем, что январь - 0-ой месяц)");
         int month = scanner.nextInt();
         while (month < 0 || month > 11) {
             System.out.println("Значение месяца должно быть неотрицательным и не превышать 11");
-            System.out.println("Укажите месяц");
+            System.out.println("Укажите месяц, за который вывести статистику (считаем, что январь - 0-ой месяц)");
             month = scanner.nextInt();
         }
         steptracker.printStatistics(month);
